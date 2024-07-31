@@ -1,0 +1,10 @@
+.categories {}
+
+.categories__heading {
+  font-size: 4.5rem;
+  margin: 2rem 0 8rem;
+}
+
+.underline {
+  text-decoration: underline;
+}

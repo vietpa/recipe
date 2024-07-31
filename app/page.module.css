@@ -1,10 +1,20 @@
 .main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  padding: 6rem;
   min-height: 100vh;
+  font-size: 1.6rem;
+}
+
+.container {
+  max-width: 120rem;
+  margin: auto;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .description {
