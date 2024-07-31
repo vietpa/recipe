@@ -12,10 +12,6 @@ const Root = styled('div')(() => ({
   width: '100%',
   fontSize: '1.4rem',
 
-  [`& .logo`]: {
-
-  },
-
   [`& .sub-header`]: {
     backgroundColor: 'yellow',
   }
