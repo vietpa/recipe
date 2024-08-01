@@ -1,19 +1,20 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Menu from '@/app/components/menu';
 import { APP_CONSTANTS } from '@/app/globals/common';
-import { Box, Container, styled, Toolbar } from '@mui/material';
+import { Box, Container, styled } from '@mui/material';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
+import { orange } from '@mui/material/colors';
 
 const Root = styled('div')(() => ({
   width: '100%',
   fontSize: '1.4rem',
 
   [`& .sub-header`]: {
-    backgroundColor: 'yellow',
+    backgroundColor: orange[50],
   }
 }))
 

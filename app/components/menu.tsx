@@ -4,6 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { styled } from '@mui/material';
+import { red } from '@mui/material/colors';
 import clsx from 'clsx';
 
 const Root: any = styled('div')(() => ({
@@ -11,21 +12,23 @@ const Root: any = styled('div')(() => ({
     listStyle: 'none',
     display: 'flex',
     paddingLeft: '2rem',
+    fontSize: '1.4rem',
   },
 
   [`& .menu-main`]: {
     paddingLeft: 0,
+    fontSize: '1.6rem',
     [`& .menu-link`]: {
       textTransform: 'uppercase',
-      padding: '1rem 0',
+      padding: '.5rem 0',
       margin: '0 3rem',
       borderBottom: '2px solid transparent'
     },
     [`& .activated`]: {
-      borderBottom: '2px solid red'
+      borderBottom: `2px solid ${red[400]}`
     },
     [`& .menu-link:hover`]: {
-      borderBottom: '2px solid red'
+      borderBottom: `2px solid ${red[400]}`
     }
   },
 

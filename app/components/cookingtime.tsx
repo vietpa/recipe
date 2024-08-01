@@ -14,26 +14,26 @@ const Root = styled('div')(() => ({
   }
 }))
 
-const CookingTime = () => {
+const CookingTime = ({ data }: any) => {
   return (
     <Root>
-      <Grid container spacing={2} alignItems="center">
-        <Grid item fontSize={'30px'} display={'flex'} alignItems="center">
-          <SvgIcon fontSize="inherit">
+      <Grid container spacing={2}>
+        <Grid item fontSize={'30px'} display={'flex'}>
+          <SvgIcon fontSize="inherit" sx={{ marginTop: '.5rem' }}>
             <AccessTimeIcon />
           </SvgIcon>
         </Grid>
         <Grid item>
           <label>PREP</label>
-          <div>10 mins</div>
+          <div>{data.prep}</div>
         </Grid>
         <Grid item>
           <label>BAKE</label>
-          <div>1 hr to 1 hr 15 mins</div>
+          <div>{data.bake}</div>
         </Grid>
         <Grid item>
           <label>TOTAL</label>
-          <div>1 hr 10 mins</div>
+          <div>{data.total}</div>
         </Grid>
       </Grid>
     </Root>

@@ -17,7 +17,6 @@ const Root = styled('nav')(() => ({
 
 interface Breadcrumb {
   label: string;
-  href: string;
 }
 
 const Breadcrumbs = ({ breadcrumbs }: { breadcrumbs: Breadcrumb[] }) => {
